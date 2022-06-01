@@ -1,16 +1,45 @@
 .game-card {
-    height: 100vh;
+    height: 100%;
     font-family: 'Open Sans', monospace;
+    margin-top: 30px;
+}
+
+.blink {
+    animation: blinker 1.5s step-start 3;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 #card-play {
     display: none;
     height: 150px;
-    
+
 }
+
 #card-quest {
     display: block;
     height: 150px;
     text-shadow: 1px 1px 2px gray;
     vertical-align: middle;
+}
+
+.game-title {
+    padding: 5px;
+    font-size: large;
+    text-align: justify;
+}
+
+.card-footer {
+    padding: 0.5rem 20px;
+}
+
+.btn {
+    margin: 2px 7px;
+    box-shadow: 1px 1px 2px gray;
+    border-radius: 5px;
+    width: -webkit-fill-available;
 }
